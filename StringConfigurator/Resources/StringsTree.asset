@@ -1,0 +1,56 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb0e88f4e43b4c808c5faf00a54503d1, type: 3}
+  m_Name: StringsTree
+  m_EditorClassIdentifier: 
+  _messageKeyRoots:
+    _serializedList:
+    - Key: Animations
+      Value:
+        Key: Test1
+        SubKeys:
+        - rid: 8637376790497067015
+    - Key: Messages
+      Value:
+        Key: New
+        SubKeys:
+        - rid: 8637376790497067018
+        - rid: 8637376790497067017
+  _messageKeysPaths:
+  - Animations/Test1/ujidas/zxczxczxc
+  - Messages/New/xxxxxxxxxxxxxxx
+  - Messages/New/asdadasd
+  references:
+    version: 2
+    RefIds:
+    - rid: 8637376790497067015
+      type: {class: ParentKeyBranch, ns: DingoUnityProjectMastering.StringConfigurator.StringTree,
+        asm: Assembly-CSharp}
+      data:
+        Key: ujidas
+        SubKeys:
+        - rid: 8637376790497067016
+    - rid: 8637376790497067016
+      type: {class: SingleKeyBranch, ns: DingoUnityProjectMastering.StringConfigurator.StringTree,
+        asm: Assembly-CSharp}
+      data:
+        Key: zxczxczxc
+    - rid: 8637376790497067017
+      type: {class: SingleKeyBranch, ns: DingoUnityProjectMastering.StringConfigurator.StringTree,
+        asm: Assembly-CSharp}
+      data:
+        Key: asdadasd
+    - rid: 8637376790497067018
+      type: {class: SingleKeyBranch, ns: DingoUnityProjectMastering.StringConfigurator.StringTree,
+        asm: Assembly-CSharp}
+      data:
+        Key: xxxxxxxxxxxxxxx
