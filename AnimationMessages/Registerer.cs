@@ -13,6 +13,6 @@ namespace DingoUnityProjectMastering.AnimationMessages
         {
             ScriptableObjectsRootSettings.TryAddKey(nameof(AnimationMessages));
         }
-#endif
     }
+#endif
 }
