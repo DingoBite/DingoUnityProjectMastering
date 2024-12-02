@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using DingoUnityProjectMastering.StringConfigurator.Core.Utils;
 using UnityEngine;
+using static DingoUnityProjectMastering.StringConfigurator.Core.Utils.StringConstants;
 
 namespace DingoUnityProjectMastering.StringConfigurator.StringTree
 {
@@ -18,7 +19,7 @@ namespace DingoUnityProjectMastering.StringConfigurator.StringTree
 
         public override IEnumerable<string> CollectKeys(string root = "")
         {
-            yield return $"{root}/{Key}";
+            yield return $"{root}{D}{Key}";
         }
     }
     
@@ -31,10 +32,10 @@ namespace DingoUnityProjectMastering.StringConfigurator.StringTree
 
         public override IEnumerable<string> CollectKeys(string root = "")
         {
-            if (string.IsNullOrWhiteSpace(Key) || !Key.ValidateMessageKey())    
+            if (string.IsNullOrWhiteSpace(Key) || !Key.Valid())    
                 yield break;
 
-            _root = $"{root}/{Key}";
+            _root = $"{root}{D}{Key}";
             if (SubKeys.Count == 0)
             {
                 yield return _root;

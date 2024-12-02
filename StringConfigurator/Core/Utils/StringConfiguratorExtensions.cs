@@ -2,9 +2,10 @@ namespace DingoUnityProjectMastering.StringConfigurator.Core.Utils
 {
     public static class StringConfiguratorExtensions
     {
-        public static bool ValidateMessageKey(this string value)
+        public static bool Valid(this string value)
         {
-            return value != StringConstants.NONE && 
+            return !string.IsNullOrWhiteSpace(value) &&
+                   value != StringConstants.NONE && 
                    value != StringConstants.UNDEFINED && 
                    value != StringConstants.ERROR;
         }

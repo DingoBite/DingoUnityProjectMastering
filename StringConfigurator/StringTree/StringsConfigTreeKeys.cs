@@ -11,14 +11,14 @@ namespace DingoUnityProjectMastering.StringConfigurator.StringTree
     {
         [SerializeField] private SerializedDictionary<string, ParentKeyBranch> _messageKeyRoots;
         [SerializeField] private List<string> _messageKeysPaths;
-        
+
         private List<string> CollectKeys()
         {
             return _messageKeyRoots.OrderBy(p => p.Key).SelectMany(e => e.Value.CollectKeys(e.Key)).ToList();
         }
-
+        
         [Button]
-        private void BackPaths()
+        private void BakePaths()
         {
             if (_messageKeyRoots == null)
                 return;
