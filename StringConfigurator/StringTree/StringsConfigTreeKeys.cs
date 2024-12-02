@@ -6,7 +6,7 @@ using UnityEngine;
 
 namespace DingoUnityProjectMastering.StringConfigurator.StringTree
 {
-    [CreateAssetMenu(menuName = nameof(StringsConfigTreeKeys) + "/" + nameof(StringsConfigTreeKeys), fileName = nameof(StringsConfigTreeKeys), order = 0)]
+    [CreateAssetMenu(menuName = nameof(StringConfigurator) + "/" + nameof(StringsConfigTreeKeys), fileName = nameof(StringsConfigTreeKeys), order = 0)]
     public class StringsConfigTreeKeys : ScriptableObject
     {
         [SerializeField] private SerializedDictionary<string, ParentKeyBranch> _messageKeyRoots;
